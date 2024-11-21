@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.computerv"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,8 @@ android {
 dependencies {
     implementation("com.vanniktech:android-image-cropper:4.5.0")
     implementation("cz.adaptech.tesseract4android:tesseract4android:4.7.0")
+    implementation("org.apache.poi:poi:5.3.0")
+    implementation("org.apache.poi:poi-ooxml:5.3.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

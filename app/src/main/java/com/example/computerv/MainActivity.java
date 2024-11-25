@@ -49,12 +49,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -317,6 +315,7 @@ public class MainActivity extends AppCompatActivity {
                     if (result.isSuccessful()) {
                         Uri uri = result.getUriContent();
                         previewImage.setImageURI(uri);
+                        previewImage.setVisibility(View.VISIBLE);
                         textView.setVisibility(View.VISIBLE);
                         extractedText.setVisibility(View.VISIBLE);
                         extractedText.setText(toText(uriToBitmap(uri,this)));

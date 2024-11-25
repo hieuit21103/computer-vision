@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -39,6 +40,7 @@
             android:id="@+id/previewImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:visibility="invisible"
             app:srcCompat="@android:drawable/screen_background_light" />
 
         <TextView
@@ -74,6 +76,7 @@
         android:clickable="true"
         android:focusable="true"
         android:tint="@android:color/white"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add" />
